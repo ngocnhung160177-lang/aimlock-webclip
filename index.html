@@ -19,6 +19,9 @@ button{border:0;border-radius:12px;padding:14px 16px;font-weight:750;font-size:1
 .tag{font-size:11px;color:var(--cyan);border:1px solid #28617a;padding:5px 8px;border-radius:20px}
 .status{display:none;margin-top:12px;padding:11px;border-radius:10px;background:#102d2b;color:var(--green);font-size:13px}
 footer{text-align:center;color:#71819a;font-size:12px;padding:18px}
+.locked {
+  display: none;
+}
 </style>
 </head>
 <body>
@@ -28,7 +31,7 @@ footer{text-align:center;color:#71819a;font-size:12px;padding:18px}
 <h1>SIÊU ANTIBAND ☠️</h1>
 <div class="sub">DNS CONFIGURATION • WEB CLIP</div>
 </header>
-<section class="card">
+<section class="card" id="loginSection">
 <h2>🔐 Kích hoạt quyền truy cập</h2>
 <p class="muted">Nhập key được cấp để kiểm tra quyền sử dụng. Key VIP và key thường sẽ có quyền lợi khác nhau.</p>
 <input id="key" type="password" placeholder="Nhập key của bạn" autocomplete="off">
@@ -36,23 +39,23 @@ footer{text-align:center;color:#71819a;font-size:12px;padding:18px}
 <div id="status" class="status" role="status"></div>
 <p class="muted" style="margin-bottom:0">Kết nối xác thực máy chủ sẽ được cấu hình sau khi triển khai backend.</p>
 </section>
-<section class="card">
+<section class="card" id="dnsSection">
 <h2>⚡ Hồ sơ DNS</h2>
 <button class="option" onclick="showInfo('Nhẹ tâm 🎯','Cloudflare DNS over HTTPS')"><span><b>Nhẹ tâm 🎯</b><small>Cloudflare DNS • DoH</small></span><span class="tag">PROFILE 01</span></button>
 <button class="option" onclick="showInfo('Fix rung tâm 🎯','Google DNS over HTTPS')"><span><b>Fix rung tâm 🎯</b><small>Google DNS • DoH</small></span><span class="tag">PROFILE 02</span></button>
 <div id="dnsstatus" class="muted" aria-live="polite"></div>
 </section>
-<section class="card">
+<section class="card" id="benefitsSection">
 <h2>👑 Quyền lợi tài khoản</h2>
 <p class="muted"><b>VIP:</b> Mở toàn bộ mục được cấp quyền theo gói.</p>
 <p class="muted"><b>Thường:</b> Truy cập các chức năng cơ bản với giới hạn.</p>
 <p class="muted">Trạng thái quyền lợi chỉ được mở sau khi máy chủ xác thực key thành công.</p>
 </section>
-<section class="card">
+<section class="card" id="supportSection">
 <h2>💬 Hỗ trợ</h2>
 <p class="muted">TikTok: @baoan_549</p>
 </section>
-<section class="card">
+<section class="card" id="featuresSection">
   <h2>🎯 CHỨC NĂNG AIMLOCK</h2>
   <p class="muted">Công cụ hỗ trợ luyện ngắm và tối ưu thiết bị.</p>
 
