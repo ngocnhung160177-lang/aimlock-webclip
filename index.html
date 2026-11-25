@@ -1,145 +1,28 @@
 <!doctype html>
-<html lang="vi">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#090d18">
-<title>AIMLOCK SIÊU ANTIBAND</title>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AIMLOCK Web Clip</title>
 <style>
-:root{color-scheme:dark;--bg:#090d18;--panel:#111a2b;--line:#25334b;--cyan:#56d9ff;--green:#68f0b0;--muted:#9aaac2}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#172943 0,#090d18 48%);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#f4f8ff;min-height:100vh;padding:24px 16px 40px}
-main{max-width:520px;margin:auto}.brand{text-align:center;padding:22px 8px}.logo{font-size:13px;letter-spacing:3px;color:var(--cyan);font-weight:800}.brand h1{font-size:27px;margin:10px 0 6px}.sub{color:var(--muted);font-size:13px}
-.card{background:linear-gradient(145deg,#141f33,#0f1727);border:1px solid var(--line);border-radius:20px;padding:19px;margin:14px 0;box-shadow:0 12px 35px #0005}
-h2{font-size:17px;margin:0 0 12px}.muted{color:var(--muted);font-size:13px;line-height:1.55}
-input{width:100%;padding:15px;border-radius:12px;border:1px solid #33445f;background:#080f1c;color:white;font-size:15px;outline:none;margin:8px 0 12px}
-button{border:0;border-radius:12px;padding:14px 16px;font-weight:750;font-size:14px;cursor:pointer}
-.primary{width:100%;background:linear-gradient(90deg,#3bc8f3,#6ce8bb);color:#06121b}
-.option{width:100%;display:flex;justify-content:space-between;align-items:center;text-align:left;background:#0b1423;border:1px solid #2b3b54;color:white;margin:8px 0}
-.option small{display:block;color:var(--muted);font-weight:400;margin-top:4px}
-.tag{font-size:11px;color:var(--cyan);border:1px solid #28617a;padding:5px 8px;border-radius:20px}
-.status{display:none;margin-top:12px;padding:11px;border-radius:10px;background:#102d2b;color:var(--green);font-size:13px}
-footer{text-align:center;color:#71819a;font-size:12px;padding:18px}
-.locked {
-  display: none;
-}
-</style>
-</head>
-<body>
-<main>
-<header class="brand">
-<div class="logo">A I M L O C K</div>
-<h1>SIÊU ANTIBAND ☠️</h1>
-<div class="sub">DNS CONFIGURATION • WEB CLIP</div>
-</header>
-<section class="card" id="loginSection">
-<h2>🔐 Kích hoạt quyền truy cập</h2>
-<p class="muted">Nhập key được cấp để kiểm tra quyền sử dụng. Key VIP và key thường sẽ có quyền lợi khác nhau.</p>
-<input id="key" type="password" placeholder="Nhập key của bạn" autocomplete="off">
-<button class="primary" onclick="validateKey()">XÁC THỰC KEY</button>
-<div id="status" class="status" role="status"></div>
-<p class="muted" style="margin-bottom:0">Kết nối xác thực máy chủ sẽ được cấu hình sau khi triển khai backend.</p>
-</section>
-<section class="card" id="dnsSection">
-<h2>⚡ Hồ sơ DNS</h2>
-<button class="option" onclick="showInfo('Nhẹ tâm 🎯','Cloudflare DNS over HTTPS')"><span><b>Nhẹ tâm 🎯</b><small>Cloudflare DNS • DoH</small></span><span class="tag">PROFILE 01</span></button>
-<button class="option" onclick="showInfo('Fix rung tâm 🎯','Google DNS over HTTPS')"><span><b>Fix rung tâm 🎯</b><small>Google DNS • DoH</small></span><span class="tag">PROFILE 02</span></button>
-<div id="dnsstatus" class="muted" aria-live="polite"></div>
-</section>
-<section class="card" id="benefitsSection">
-<h2>👑 Quyền lợi tài khoản</h2>
-<p class="muted"><b>VIP:</b> Mở toàn bộ mục được cấp quyền theo gói.</p>
-<p class="muted"><b>Thường:</b> Truy cập các chức năng cơ bản với giới hạn.</p>
-<p class="muted">Trạng thái quyền lợi chỉ được mở sau khi máy chủ xác thực key thành công.</p>
-</section>
-<section class="card" id="supportSection">
-<h2>💬 Hỗ trợ</h2>
-<p class="muted">TikTok: @baoan_549</p>
-</section>
-<section class="card" id="featuresSection">
-  <h2>🎯 CHỨC NĂNG AIMLOCK</h2>
-  <p class="muted">Công cụ hỗ trợ luyện ngắm và tối ưu thiết bị.</p>
-
-  <h3>👑 GÓI VIP</h3>
-  <details class="option">
-    <summary>AIM NECK</summary>
-    <p>Hướng dẫn luyện kéo tâm lên vùng đầu.</p>
-  </details>
-  <details class="option">
-    <summary>AIM BODY</summary>
-    <p>Hướng dẫn luyện giữ tâm ổn định ở thân mục tiêu.</p>
-  </details>
-  <details class="option">
-    <summary>AIM ĐỊNH VỊ</summary>
-    <p>Luyện theo dõi mục tiêu trong phòng tập.</p>
-  </details>
-  <details class="option">
-    <summary>FIX LAG V5</summary>
-    <p>Đóng ứng dụng nền, giải phóng dung lượng và kiểm tra kết nối.</p>
-  </details>
-
-  <h3>🔰 GÓI THƯỜNG</h3>
-  <details class="option">
-    <summary>AIMLOCK CƠ BẢN</summary>
-    <p>Bài tập luyện độ chính xác khi ngắm.</p>
-  </details>
-  <details class="option">
-    <summary>FIX LAG V1</summary>
-    <p>Kiểm tra mạng và giảm ứng dụng chạy nền.</p>
-  </details>
-  <details class="option">
-    <summary>TỐI ƯU RAM</summary>
-    <p>Đóng ứng dụng không cần thiết trước khi chơi.</p>
-  </details>
-
-  <p class="muted">Các mục trên là hướng dẫn và công cụ hiển thị, không can thiệp hoặc tự động ngắm trong game.</p>
-</section><footer>AIMLOCK • DNS & WEB CLIP</footer>
-</main>
+body{margin:0;background:#0b1020;color:#f4f7ff;font-family:Arial,sans-serif}main{max-width:520px;margin:auto;padding:20px}.card{background:#172238;border:1px solid #34435e;border-radius:16px;padding:18px;margin:14px 0}h1,h2{margin-top:0}.muted{color:#aab7ca;font-size:14px;line-height:1.5}input[type=password]{width:100%;box-sizing:border-box;padding:14px;margin:10px 0;background:#0b1425;color:white;border:1px solid #455674;border-radius:10px}button,.btn{padding:13px 16px;border:0;border-radius:10px;background:#397fe8;color:white;font-weight:bold;text-decoration:none;display:inline-block;cursor:pointer}.wide{width:100%;box-sizing:border-box;text-align:center}.secondary{background:#34435e}.hidden{display:none!important}.top{display:flex;justify-content:flex-end;margin:8px 0}.row{display:flex;justify-content:space-between;align-items:center;gap:12px}.feature{border-top:1px solid #34435e;padding:14px 0}.switch{width:48px;height:27px;position:relative;flex:none}.switch input{opacity:0;width:0;height:0}.track{position:absolute;inset:0;background:#596579;border-radius:20px}.track:before{content:"";position:absolute;width:19px;height:19px;left:4px;top:4px;background:white;border-radius:50%;transition:.2s}.switch input:checked+.track{background:#10a77e}.switch input:checked+.track:before{transform:translateX(21px)}.status{display:none;background:#0b1425;border:1px solid #34435e;padding:10px;border-radius:8px;margin-top:10px}.pill{font-size:12px;color:#79e5ef}h3{color:#79e5ef}footer{text-align:center;color:#8998ae;font-size:12px;padding:20px}
+</style></head><body><main>
+<header style="text-align:center;padding:15px"><div style="color:#79e5ef;letter-spacing:5px;font-weight:bold">A I M L O C K</div><h1>SIÊU ANTIBAND ☠️</h1><p class="muted">DNS CONFIGURATION • WEB CLIP</p></header>
+<section id="home" class="card"><h2>🔐 NHẬP KEY</h2><p class="muted">Nhập key được cấp để xác thực.</p><input id="key" type="password" placeholder="Nhập key của bạn"><button id="validate" class="wide" onclick="validateKey()">XÁC THỰC KEY</button><div id="status" class="status"></div><p class="muted">Chưa có key? Hãy liên hệ Admin để được cấp key.</p><a class="btn wide secondary" href="https://www.tiktok.com/@baoan_549" target="_blank" rel="noopener">💬 LIÊN HỆ ADMIN @baoan_549</a></section>
+<section id="functions" class="hidden"><div class="top"><button class="secondary" onclick="openSettings()">⚙️ CÀI ĐẶT</button></div><section class="card"><div class="row"><h2>🎯 CHỨC NĂNG</h2><b id="tier" class="pill"></b></div><div id="vip"><h3>👑 GÓI VIP</h3>
+<div class="feature"><div class="row"><b>AIM NECK</b><label class="switch"><input type="checkbox" onchange="mark(this)"><span class="track"></span></label></div><p class="muted">Bài tập luyện kéo tâm trong phòng tập.</p></div>
+<div class="feature"><div class="row"><b>AIM BODY</b><label class="switch"><input type="checkbox" onchange="mark(this)"><span class="track"></span></label></div><p class="muted">Luyện giữ tâm ổn định.</p></div>
+<div class="feature"><div class="row"><b>AIM ĐỊNH VỊ</b><label class="switch"><input type="checkbox" onchange="mark(this)"><span class="track"></span></label></div><p class="muted">Luyện theo dõi chuyển động trong phòng tập.</p></div>
+<div class="feature"><div class="row"><b>FIX LAG V5</b><label class="switch"><input type="checkbox" onchange="mark(this)"><span class="track"></span></label></div><p class="muted">Gợi ý đóng ứng dụng nền và kiểm tra mạng.</p></div></div>
+<h3>🔰 GÓI THƯỜNG</h3>
+<div class="feature"><div class="row"><b>AIMLOCK CƠ BẢN</b><label class="switch"><input type="checkbox" onchange="mark(this)"><span class="track"></span></label></div><p class="muted">Bài tập luyện độ chính xác khi ngắm.</p></div>
+<div class="feature"><div class="row"><b>FIX LAG V1</b><label class="switch"><input type="checkbox" onchange="mark(this)"><span class="track"></span></label></div><p class="muted">Kiểm tra mạng và giảm ứng dụng nền.</p></div>
+<div class="feature"><div class="row"><b>TỐI ƯU RAM</b><label class="switch"><input type="checkbox" onchange="mark(this)"><span class="track"></span></label></div><p class="muted">Đóng ứng dụng không cần thiết trước khi chơi.</p></div>
+<p class="muted">Công tắc chỉ đổi trạng thái hiển thị trên website; không can thiệp hay tự động ngắm trong game.</p></section></section>
+<section id="settings" class="card hidden"><h2>⚙️ CÀI ĐẶT</h2><p class="muted">Loại key: <b id="settingTier"></b></p><p class="muted">Hạn sử dụng: <b id="expiry"></b></p><button class="secondary" onclick="back()">← QUAY LẠI CHỨC NĂNG</button><a class="btn wide secondary" style="margin-top:10px" href="https://www.tiktok.com/@baoan_549" target="_blank">💬 LIÊN HỆ ADMIN</a><button class="wide secondary" style="margin-top:10px" onclick="logout()">ĐĂNG XUẤT</button></section>
+<footer>AIMLOCK • DNS & WEB CLIP</footer></main>
 <script>
-async function validateKey() {
-  const s = document.getElementById('status');
-  const key = document.getElementById('key').value.trim();
-
-  s.style.display = 'block';
-
-  if (!key) {
-    s.textContent = 'Vui lòng nhập key!';
-    return;
-  }
-
-  s.textContent = 'Đang xác thực key...';
-
-  try {
-    const response = await fetch(
-      'https://aimlock-backend-1.onrender.com/api/validate',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ key })
-      }
-    );
-
-    const data = await response.json();
-
-    if (!response.ok || !data.ok) {
-      throw new Error(data.error || 'Key không hợp lệ');
-    }
-
-    const expiry = data.expiresAt
-      ? new Date(data.expiresAt).toLocaleString('vi-VN')
-      : 'Không thời hạn';
-
-    s.textContent =
-      'Xác thực thành công! Loại key: ' +
-      data.tier + ' | Hạn sử dụng: ' + expiry;
-
-  } catch (error) {
-    s.textContent = 'Xác thực thất bại: ' + error.message;
-  }
-}
-
-function showInfo(name,provider){
- document.getElementById('dnsstatus').textContent=name+' — '+provider+'. Đây là hồ sơ tham khảo; cần cấu hình DNS trên thiết bị hoặc ứng dụng tương thích để sử dụng.';
-}
-</script>
-</body>
-</html>
+function msg(t){let s=document.getElementById('status');s.textContent=t;s.style.display='block'}
+function expiryText(v){if(v===null||v===undefined||v==='')return 'Không thời hạn';let d=new Date(v);return isNaN(d.getTime())?String(v):d.toLocaleString('vi-VN')}
+async function validateKey(){let key=document.getElementById('key').value.trim(),b=document.getElementById('validate');if(!key){msg('Bạn chưa có key. Hãy liên hệ Admin.');return}b.disabled=true;b.textContent='ĐANG KIỂM TRA...';try{let r=await fetch('https://aimlock-backend-1.onrender.com/api/validate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key})});let d=await r.json();if(!r.ok||!d.ok)throw Error(d.error||'Key không hợp lệ hoặc hết hạn');let vip=String(d.tier||'NORMAL').toUpperCase()==='VIP';document.getElementById('tier').textContent=vip?'👑 KEY VIP':'🔰 KEY THƯỜNG';document.getElementById('settingTier').textContent=vip?'VIP':'THƯỜNG';document.getElementById('expiry').textContent=expiryText(d.expiresAt);document.getElementById('vip').classList.toggle('hidden',!vip);document.getElementById('home').classList.add('hidden');document.getElementById('settings').classList.add('hidden');document.getElementById('functions').classList.remove('hidden')}catch(e){msg('Xác thực thất bại: '+e.message)}finally{b.disabled=false;b.textContent='XÁC THỰC KEY'}}
+function openSettings(){document.getElementById('functions').classList.add('hidden');document.getElementById('settings').classList.remove('hidden')}
+function back(){document.getElementById('settings').classList.add('hidden');document.getElementById('functions').classList.remove('hidden')}
+function logout(){document.getElementById('settings').classList.add('hidden');document.getElementById('functions').classList.add('hidden');document.getElementById('home').classList.remove('hidden');document.getElementById('key').value='';document.getElementById('status').style.display='none'}
+function mark(x){let b=x.closest('.feature').querySelector('b');b.textContent=b.textContent.replace(/ ✓ BẬT| — TẮT/g,'')+(x.checked?' ✓ BẬT':' — TẮT')}
+</script></body></html>
